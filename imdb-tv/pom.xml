@@ -40,7 +40,37 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!-- optional, it brings userful tags to display spring security stuff -->
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+        </dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>mvnrepository</id>
+			<name>mvnrepository</name>
+			<url>http://mvnrepository.com</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
@@ -51,5 +81,8 @@
 		</plugins>
 	</build>
 
+	<properties>
+		<java.version>1.9</java.version>
+	</properties>
 
 </project>
